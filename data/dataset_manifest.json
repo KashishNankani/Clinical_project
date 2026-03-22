@@ -1,0 +1,126 @@
+[
+      {
+        "audio_filepath": "dataset/audio\\long_audio.wav",
+        "text": "Patient is a 45-year-old male who has been experiencing persistent cough and nausea for the past three days. He also reports slight chest discomfort while breathing and occasional fatigue during the day. There is no history of recent travel, but the patient mentions that he was exposed to cold weather last week. According to the examination, the doctor recommends taking paracetamol twice a day, maintaining adequate hydration, and returning for a follow-up visit if the symptoms persist or worsen for more than five days."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_1.wav",
+        "text": "The patient reports having a fever and a persistent cough for the past three days. He also complains about mild headache and fatigue. The doctor advised him to rest and take paracetamol tablets twice a day."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_2.wav",
+        "text": "The patient says she feels dizziness and nausea after taking the medication. Her blood pressure appears slightly elevated during the examination. The doctor recommended monitoring the symptoms and drinking plenty of water."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_3.wav",
+        "text": "The patient has been experiencing stomach pain and loss of appetite since yesterday. The doctor suspects a mild gastric infection. He prescribed antacid tablets and advised avoiding spicy food."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_4.wav",
+        "text": "The patient reports chest pain while breathing deeply. The doctor checked the patient's pulse rate and blood pressure immediately. Further tests were recommended to rule out any serious condition."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_5.wav",
+        "text": "The patient complains of severe headache and sensitivity to light. The doctor thinks it might be a migraine episode. He prescribed ibuprofen and advised resting in a quiet environment."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_6.wav",
+        "text": "The patient has diabetes and regularly checks blood sugar levels. Recently the readings have been higher than normal. The doctor adjusted the insulin dosage and advised maintaining a strict diet."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_7.wav",
+        "text": "The patient reports shortness of breath while climbing stairs. The doctor listened to the lungs using a stethoscope. A chest X-ray was suggested for further diagnosis."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_8.wav",
+        "text": "The patient has had a sore throat and mild fever for two days. The doctor examined the throat and noticed inflammation. Antibiotics and warm saltwater gargles were recommended."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_9.wav",
+        "text": "The patient complains of muscle pain and body aches after intense physical activity. The doctor advised taking rest and applying a cold compress. A mild pain relief tablet was also prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_10.wav",
+        "text": "The patient reports frequent coughing during the night. The doctor suspects a respiratory infection. A cough syrup and antibiotics were prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_11.wav",
+        "text": "The patient reports dizziness when standing up suddenly. The doctor checked the patient's blood pressure in both sitting and standing positions. He advised drinking more fluids and resting properly."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_12.wav",
+        "text": "The patient complains about severe stomach cramps and nausea. The doctor suspects food poisoning. Medication was prescribed along with a recommendation for a light diet."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_13.wav",
+        "text": "The patient reports persistent fatigue and weakness. Blood tests were suggested to check hemoglobin levels. The doctor suspects possible anemia."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_14.wav",
+        "text": "The patient has high blood pressure and occasional headaches. The doctor advised reducing salt intake and exercising regularly. Blood pressure medication was prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_15.wav",
+        "text": "The patient complains about chest discomfort and mild breathlessness. The doctor performed an electrocardiogram to check heart activity. Further evaluation was recommended"
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_16.wav",
+        "text": "The patient reports throat pain and difficulty swallowing. The doctor examined the throat carefully. Antibiotics and pain relief medication were prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_17.wav",
+        "text": "The patient experiences frequent migraines and sensitivity to sound. The doctor recommended avoiding stress and getting proper sleep. Preventive medication was also suggested."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_18.wav",
+        "text": "The patient reports mild fever and body aches since yesterday evening. The doctor suspects a viral infection. Paracetamol and rest were recommended."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_19.wav",
+        "text": "The patient complains of stomach bloating and indigestion after meals. The doctor advised eating smaller portions and avoiding oily food. Digestive tablets were prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_20.wav",
+        "text": "The patient has been coughing continuously for more than a week. The doctor recommended a chest examination and prescribed antibiotics. Further tests may be required if symptoms continue."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_21.wav",
+        "text": "The patient reports joint pain and stiffness in the morning. The doctor suspects early symptoms of arthritis. Pain relief medication and physiotherapy were recommended."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_22.wav",
+        "text": "The patient complains about severe back pain after lifting heavy objects. The doctor advised avoiding physical strain for a few days. Muscle relaxant tablets were prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_23.wav",
+        "text": "The patient reports nausea and vomiting since morning. The doctor recommended oral rehydration and prescribed anti nausea medication. Rest was also advised."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_24.wav",
+        "text": "The patient complains of persistent cough with mild chest pain. The doctor suspects bronchitis. Antibiotics and cough syrup were prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_25.wav",
+        "text": "The patient has a mild fever and sore throat. The doctor recommended warm fluids and rest. Paracetamol tablets were prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_26.wav",
+        "text": "The patient reports dizziness and blurred vision occasionally. The doctor suggested checking blood sugar levels. A detailed blood test was recommended."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_27.wav",
+        "text": "The patient complains about difficulty breathing during exercise. The doctor suspects mild asthma symptoms. An inhaler was prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_28.wav",
+        "text": "The patient reports severe headache accompanied by nausea. The doctor suspects migraine. Pain relief medication was prescribed."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_29.wav",
+        "text": "The patient complains of abdominal pain and vomiting. The doctor recommended an ultrasound examination. Medication was prescribed to relieve symptoms."
+    },
+    {
+        "audio_filepath": "dataset/audio\\recording_30.wav",
+        "text": "The patient reports fatigue and mild chest discomfort. The doctor checked the patient's blood pressure and pulse rate. Further cardiac evaluation was recommended."
+    }
+]

@@ -1,0 +1,15 @@
+# virtual environment
+venv/
+
+# audio files (large)
+data/audio_samples/
+
+# generated outputs
+outputs/
+
+# python cache
+__pycache__/
+*.pyc
+
+# whisper model cache
+*.pt
