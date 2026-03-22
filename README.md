@@ -1,4 +1,3 @@
-# Clinical_project
 # Clinical ASR Project
 
 An end-to-end Automatic Speech Recognition (ASR) pipeline for clinical audio, built using OpenAI Whisper. Transcribes doctor-patient conversations, evaluates accuracy using Word Error Rate (WER), and applies domain-specific auto-corrections.
