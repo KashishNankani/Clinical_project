@@ -3,8 +3,7 @@
 An end-to-end Automatic Speech Recognition (ASR) pipeline for clinical audio, built using OpenAI Whisper. Transcribes doctor-patient conversations, evaluates accuracy using Word Error Rate (WER), and applies domain-specific auto-corrections.
 
 ## Results
-- Average WER: 0.13
-- Average Corrected WER: 0.11
+- Average WER: 0.11
 
 ## Project Structure
 ```
