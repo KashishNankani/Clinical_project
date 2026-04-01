@@ -99,7 +99,7 @@ def print_summary():
         print(f"  {file_name:<25} {data['wer']:>6.2f} {data['corrected_wer']:>10.2f}")
 
 
-# ---------------- PIPELINE ----------------
+# Running
 if __name__ == "__main__":
 
     run_script("scripts/transcribe_audio.py", "Transcribing audio files")
