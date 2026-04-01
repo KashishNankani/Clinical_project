@@ -18,14 +18,14 @@ lemmatizer = WordNetLemmatizer()
 confusion_counter = Counter()
 error_word_counter = Counter()
 
-# NEW: counter for corrected WER
+# counter for corrected WER
 corrected_total_wer = 0
 
 # function to compute similarity ratio for potential auto-corrections
 def similarity(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
-# ---------------- NORMALIZATION ----------------
+# NORMALIZATION 
 def normalize_text(text):
     text = text.lower()
 
@@ -39,7 +39,7 @@ def normalize_text(text):
     return text.strip()
 
 
-# ---------------- LEMMATIZATION ----------------
+# LEMMATIZATION 
 LEMMA_BLOCKLIST = {"was", "has", "is", "his", "its", "as"}
 
 def lemmatize_text(text):
@@ -53,14 +53,14 @@ def lemmatize_text(text):
     return " ".join(lemmas)
 
 
-# ---------------- APPLY AUTO CORRECTIONS ----------------
+# APPLY AUTO CORRECTIONS 
 def apply_corrections(text, corrections):
     words = text.split()
     corrected = [corrections.get(word, word) for word in words]
     return " ".join(corrected)
 
 
-# ---------------- LOAD DATA ----------------
+# LOAD DATA
 with open("outputs/predictions/all_predictions.json") as f:
     predictions = json.load(f)
 
@@ -75,7 +75,7 @@ for item in dataset:
     references[file_name] = item["text"]
 
 
-# ---------------- LOAD AUTO CORRECTIONS (if exists from previous run) ----------------
+# LOAD AUTO CORRECTIONS (if exists from previous run)
 auto_corrections = {}
 if os.path.exists("outputs/evaluations/auto_corrections.json"):
     with open("outputs/evaluations/auto_corrections.json") as f:
@@ -92,8 +92,7 @@ evaluation_results = {}
 alignment_dir = "outputs/alignments"
 os.makedirs(alignment_dir, exist_ok=True)
 
-
-# ---------------- MAIN EVALUATION ----------------
+# MAIN EVALUATION 
 for item in predictions:
 
     file_name = item["file_name"]
@@ -114,7 +113,7 @@ for item in predictions:
         error = wer(reference, predicted)
         result = process_words(reference, predicted)
 
-        # -------- APPLY AUTO CORRECTIONS --------
+        # APPLY AUTO CORRECTIONS 
         corrected_predicted = apply_corrections(predicted, auto_corrections)
         corrected_error = wer(reference, corrected_predicted)
 
@@ -123,7 +122,7 @@ for item in predictions:
         ref_words = reference.split()
         pred_words = predicted.split()
 
-        # -------- ERROR ANALYSIS --------
+        # ERROR ANALYSIS 
         for alignment in result.alignments:
             for chunk in alignment:
 
@@ -137,7 +136,7 @@ for item in predictions:
                         error_word_counter[r] += 1
 
 
-        # -------- SAVE ALIGNMENT --------
+        # SAVE ALIGNMENT
         corrected_result = process_words(reference, corrected_predicted)
         alignment_text = visualize_alignment(corrected_result)
        
@@ -150,7 +149,7 @@ for item in predictions:
         with open(alignment_file, "w") as f:
             f.write(alignment_text)
         
-        # -------- APPLY CORRECTIONS TO SEGMENTS --------
+        # APPLY CORRECTIONS TO SEGMENTS 
         corrected_segments = []
         for seg in item.get("segments", []):
             seg_text = normalize_text(seg["text"])
@@ -163,7 +162,7 @@ for item in predictions:
     
 
 
-        # -------- STORE FILE RESULTS --------
+        #  STORE FILE RESULTS 
         evaluation_results[file_name] = {
             "wer": round(error, 2),
             "corrected_wer": round(corrected_error, 2),
@@ -182,7 +181,7 @@ for item in predictions:
         count += 1
 
 
-# ---------------- FINAL DATASET METRICS ----------------
+# FINAL DATASET METRICS 
 if count > 0:
 
     avg_wer = total_wer / count
@@ -198,7 +197,7 @@ if count > 0:
         json.dump(evaluation_results, f, indent=4)
 
 
-# ---------------- CONFUSION MATRIX ----------------
+# CONFUSION MATRIX 
 confusion_dict = {
     f"{ref}->{pred}": freq
     for (ref, pred), freq in confusion_counter.items()
@@ -208,7 +207,7 @@ with open("outputs/evaluations/confusion_matrix.json", "w") as f:
     json.dump(confusion_dict, f, indent=4)
 
 
-# ---------------- MOST ERROR-PRONE WORDS ----------------
+# MOST ERROR-PRONE WORDS 
 top_problem_words = dict(error_word_counter.most_common(20))
 
 with open("outputs/evaluations/top_problem_words.json", "w") as f:
@@ -223,7 +222,7 @@ print("\nMost Problematic Words:")
 for word, freq in error_word_counter.most_common(10):
     print(f"{word} : {freq}")
 
-# ---------------- AUTO CORRECTION RULES ----------------
+# AUTO CORRECTION 
 
 THRESHOLD = 1
 SIM_THRESHOLD = 0.6   # key filter
