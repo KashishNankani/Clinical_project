@@ -11,7 +11,7 @@ os.makedirs(DATASET_DIR, exist_ok=True)
 
 print("Audio Recording Started")
 
-# ---------------- FIND LAST INDEX ----------------
+# FIND LAST INDEX 
 existing_files = [
     f for f in os.listdir(DATASET_DIR)
     if f.startswith("recording_") and f.endswith(".wav")
@@ -25,10 +25,10 @@ else:
 
 print(f"Starting from recording number: {start_index}")
 
-# ---------------- USER INPUT ----------------
+# USER INPUT 
 num_new = int(input("How many new recordings do you want to add? "))
 
-# ---------------- RECORD LOOP ----------------
+# RECORD LOOP 
 for i in range(start_index, start_index + num_new):
 
     input(f"\nPress ENTER to START recording sample {i}")
